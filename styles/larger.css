@@ -1,0 +1,21 @@
+@media screen and (min-width: 700px) {
+    body {
+        width: 100%;
+    }
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+        list-style: none;
+	}
+    .card-container {
+        flex-direction: row; /* Display side by side for wider screens */
+        flex-wrap: wrap; /* Allow cards to wrap to the next row if needed */
+        justify-content: space-between; /* Add space between cards */
+    }
+    .card {
+        flex: 0 0 calc(50% - 10px); /* Display two cards side by side */
+    }
+
+}

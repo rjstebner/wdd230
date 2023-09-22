@@ -1,12 +1,12 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto:wght@300&display=swap');
-
 /* Reset some default browser styles for consistency */
 body, h1, h2, h3, ul, li, p, img {
     margin: 0;
     padding: 0;
     border: 0;
 }
+
+/* Rest of your CSS styles go here */
+
 
 /* Apply styles for the profile banner */
 header {
@@ -45,19 +45,20 @@ header {
 
 
 /* Apply styles for the links box */
-nav ul{
-    list-style: none;
-}
+
 nav {
-    display: flex;
     justify-content: space-around;
     font-family: 'Comfortaa', 'Shadows Into Light', sans-serif;
     font-size: 1.3em;
     line-height: 1.5;
     color: #eabfcb;
+    text-align: center;
     text-decoration: none;
     background-color: #7fb285; /* Light gray background color */
     padding: 20px; /* Add padding for spacing */
+}
+nav ul{
+    list-style: none;
 }
 
 nav a {
@@ -70,6 +71,7 @@ nav a {
 nav a:hover {
     color: #a4508b;
 }
+
 .centered-heading {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center; /* Center-align the text */
@@ -77,10 +79,14 @@ nav a:hover {
     padding-top: 20px;
     margin-bottom: 10px;
 }
+.card-container {
+    display: flex;
+    flex-direction: column; /* Stacked vertically by default */
+}
 .learning-activity {
     
     padding: 10px; /* Add padding to the top part */
-    max-width: 75%; /* Set the maximum width to 75% of the viewport */
+    max-width: 100%; /* Set the maximum width to 75% of the viewport */
     margin: 0 auto;
 }
 .activtiy-heading {
@@ -110,7 +116,5 @@ footer {
     line-height: 1.5;
 }
 #lastmodified {
-    color: #7fb285;
+    color: #ffffff;
 }
-
-/* Rest of your existing CSS styles can remain as is */

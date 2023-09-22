@@ -86,7 +86,7 @@ nav a:hover {
 .learning-activity {
     
     padding: 10px; /* Add padding to the top part */
-    max-width: 100%; /* Set the maximum width to 75% of the viewport */
+    max-width: 80%; /* Set the maximum width to 75% of the viewport */
     margin: 0 auto;
 }
 .activtiy-heading {

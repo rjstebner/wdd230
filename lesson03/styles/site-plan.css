@@ -119,7 +119,7 @@ p {
     color: #004F2D;
     padding: 5px;
 }
-#wireframe {
+.wireframe {
     display: block;
     margin: auto;
     max-width: 100%;

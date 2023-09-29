@@ -53,6 +53,7 @@ header {
 	max-width: 100%;
     background-color: #a4508b;
     color: #091E05;
+    margin-bottom: 10px;
 }
 .navigation li {
     display: block; /* change state in small view */

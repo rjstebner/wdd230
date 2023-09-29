@@ -46,37 +46,21 @@ header {
 
 /* Apply styles for the links box */
 
-#menu::before {
-	content: "≡";
-}
-#menu {
-	display: block;
-	font-size: 2rem;
-	font-weight:700;
-	text-decoration: none;
-	padding: .5rem .75rem;
-	background-color: #F9B9C3;
-	color: #091E05;
-}
-
-#menu::before {
-	content: "≡";
-}
-
-nav {
-	background-color: #D87CAC;
-}
 .navigation {
-	list-style: none;
+    display: flex;
+    list-style: none;
 	margin: 0 auto;
-	max-width: 760px;
+	max-width: 100%;
+    background-color: #a4508b;
+    color: #091E05;
 }
-
 .navigation li {
-	display: none;
+    display: block; /* change state in small view */
+    flex: 1 1 100%;
 }
 .navigation a {
-	display: block;
+    text-align: center;
+    display: block;
 	padding: 0.75rem;
 	text-align: left;
 	text-decoration: none;
@@ -85,6 +69,7 @@ nav {
 	transition: 0.5s;
     font-family: 'Comfortaa', 'Shadows Into Light', sans-serif; 
 	font-size: clamp(1rem, 2vmin, 1.5rem);
+    margin-left: 5px;
 }
 .active::after {
 	content: " 👀";
@@ -98,47 +83,44 @@ nav {
 	display: block;
 }
 
-#menu.show::before {
-	content: "X";
-}
-.centered-heading {
-    font-family: 'Comfortaa', 'Shadows Into Light', sans-serif; 
-    color: #091E05;
-    text-align: center; /* Center-align the text */
-    position: relative; /* Create a relative positioning context */
-    padding-top: 20px;
-    margin-bottom: 10px;
-}
-.card-container {
-    display: flex;
-    flex-direction: column; /* Stacked vertically by default */
-}
-.learning-activity {
-    
-    padding: 10px; /* Add padding to the top part */
-    max-width: 80%; /* Set the maximum width to 75% of the viewport */
-    margin: 0 auto;
-}
-.activtiy-heading {
+h2 {
     text-align: center;
-    color: #091E05;
-    background-color: #D87CAC;
-    padding: 3px;
-    font-size: 1.5em; /* Adjust as needed */
+    color: #004F2D;
     font-family: 'Comfortaa', 'Shadows Into Light', sans-serif;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    margin: 0; /* Remove default margins to ensure proper centering */
+    border-bottom: #004F2D solid;
 }
-.activity-list {
+p {
+    max-width: 80%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    list-style: none; /* Remove default list styles */
-    padding: 10px; /* Add padding to the bottom part */
-    border: 2px solid #a4508b;
+    margin:10px;
 }
-.map {
-        display: none
+.colours {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+#colour1{
+    background-color: #D87CAC;
+    color: #004F2D;
+    padding: 5px;
+}
+#colour2{
+    background-color: #004F2D;
+    color: #F9B9C3;
+    padding: 5px;
+}
+#colour3{
+    background-color: #091E05;
+    color: #F9B9C3;
+    padding: 5px;
+}
+#colour4{
+    background-color: #F9B9C3;
+    color: #004F2D;
+    padding: 5px;
+}
+
+
+
 footer {
     color: #F9B9C3;
     text-align: center;
@@ -147,10 +129,4 @@ footer {
     font-size: 1.2em;
     padding: 20px;
     line-height: 1.5;
-}
-#lastmodified {
-    color: #ffffff;
-}
-h4 {
-    display: none;
 }

@@ -118,7 +118,11 @@ p {
     color: #004F2D;
     padding: 5px;
 }
-
+#wireframe {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
 
 
 footer {

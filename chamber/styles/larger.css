@@ -1,12 +1,12 @@
 @media only screen and (min-width: 40em) {
     .navigation {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr; /* Remove the commas between values */
+        display: flex;
     }
     .navigation li {
-        display: block;
+        display: flex;
         flex: 1 1 auto; /* Change the flex property */
         text-align: center; /* Center the text within each li */
+        margin: auto;
     }
     .navigation a {
         display: block; /* Make the links a block element to fill the entire width */
@@ -29,20 +29,12 @@
         grid-gap: 20px; 
     }
     #business-card {
-        /* Adjust grid column values to span one column */
-        display: grid;
         grid-column: 1 / 2;
     }
     #stay-card {
-        /* Adjust grid column values to span one column */
-        display: grid;
-
         grid-column: 2/ 4;
     }
     #here-card {
-        display: grid;
-        
-        /* Adjust grid column values to span one column */
-        grid-column: 4 / 5;
+            grid-column: 4 / 5;
     }
 }

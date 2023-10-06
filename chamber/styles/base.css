@@ -110,6 +110,7 @@ main{
     width: 80%;
     height: auto;
     max-width: 355px;
+    max-height: 355px;
     overflow: hidden;
     position: relative;
     

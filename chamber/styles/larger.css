@@ -10,6 +10,7 @@
     }
     .navigation a {
         display: block; /* Make the links a block element to fill the entire width */
+        margin: auto;
     }
     #menu {
         display: none;

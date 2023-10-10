@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stebner - WDD 230 - Chamber Home Page</title>
+    <link rel="icon" href="images/torii-fav.ico">
+    <meta name="author" content="Randy Stebner">
+    <meta name="description" content="Chamber Home Page">    
+    <meta property="og:title" content="chamber of commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://thumbs.dreamstime.com/b/dazaifu-tenmangu-shrine-fukuoka-japan-june-111539523.jpg">
+    <meta property="og:url" content="https://rjstebner.github.io/wdd230/chamber">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/meduim.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <img id="logo-top" src="images/torii.jpg" alt="torii gate">
+        <div id="banner-content">
+            <h2>Dazaifinance</h2>
+            <p>For everything you need</p>
+        </div>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li>
+                    <a href="#" class="active" title="Home">Home</a>
+                    <a href="#" title="Discover">Discover</a>
+                    <a href="#" title="Directory">Directory</a>
+                    <a href="#" title="Join">Join</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img id="hero-img" src="images/hero.jpg" alt="Hero image Here">
+            <div class="button-box">Join Now</div>
+        </section>
+        <section class="event">
+            <div class="image-slider">
+                <img src="images/image-1.jpg" class="slider-image" alt="image-1">
+                <img src="images/image-2.jpeg" class="slider-image" alt="image-2">
+                <img src="images/image-3.jpg" class="slider-image" alt="image-3">
+            </div>
+            <div class="weather-card"> Weather sutff here</div>
+        </section>
+        <section class="home-grid">
+            <section class="card-container" id="business-card">
+                <img src="images/store.png" alt="">
+                <h2>Local business</h2>
+            </section>
+            <section class="card-container" id="stay-card">
+                <img src="images/hotel.jpg" alt="">
+                <h2>Where to Stay</h2>
+            </section>
+            <section class="card-container" id="here-card">
+                <img src="images/bus.jpg" alt="">
+                <h2>How to Get Here</h2>
+            </section>        
+        </section>
+    </main>
+    <footer>
+        <img id="logo-bot" src="images/torii.jpg" alt="torii gate">
+        <div class="bottom-text">
+            <p>Randy Stebner | </p>
+            <p>WDD230 Project | </p>
+            <p id="currentYear"> | </p>
+            <p id="lastmodified"> | </p>
+        </div>
+    </footer>
+    <script src="sctipts/menu.js"></script>
+    <script src="sctipts/image-slider.js"></script>
+    <script src="sctipts/getdates.js"></script>
+</body>
+</html>

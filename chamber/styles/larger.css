@@ -15,9 +15,18 @@
     #menu {
         display: none;
     }
-    .map {
-        display: block;
-        margin: 0 auto;
+    #title {
+        
+    }
+    #hero-img 
+    {
+        height: 300px;
+        width: auto;
+    }
+    .button-box {
+        position: absolute;
+        top: 15rem;
+        right: 0;
     }
     .home-grid{
         display: grid;

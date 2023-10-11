@@ -85,9 +85,18 @@ main{
     flex-direction: column;
 }
 #hero-img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 153px;
 }
+ #title{
+    background-color: #091E05;
+    color: #F9B9C3;
+    text-decoration: none;
+    font-family: 'Comfortaa', 'Roboto', sans-serif;
+    font-size: 2%rem;
+    padding: 5px;
+    margin-top: -5px;
+ }
 .button-box {
     width: 80px;
     background-color: #091E05;

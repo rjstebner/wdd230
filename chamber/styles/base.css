@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto:wght@300&display=swap");
-
+:root {
+    --background-color: white;
+    --text-color: black;
+}
+.dark-mode {
+      --background-color: black;
+      --text-color:white;    
+}
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
 header {
     background-color: #091E05;
     color: #F9B9C3;
@@ -40,6 +51,7 @@ header {
     text-decoration: none;
     padding: 0.5rem 0.75rem;
     color: #D87CAC;
+    margin-top: 30px;
 }
 nav {
     display: flex;
@@ -49,7 +61,6 @@ nav {
     list-style: none;
     margin: 0;
     padding: 0;
-    max-width: 760px;
 }
 .navigation li {
     display: none;
@@ -74,11 +85,52 @@ nav {
 #menu.show::before {
     content: "X";
 
-}.active {
+}
+.active {
     border-top: 1px solid #F9B9C3;
     border-bottom:  1px solid #F9B9C3;
 }
 
+#gear {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.5rem;
+}
+#gear::before {
+    content: "\2699"
+}
+#gear.open::before {
+    content: "X";
+}
+.setting {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    top:4px;
+    right: 0;
+    color: #D87CAC;
+}
+
+.setting li {
+    display: none;
+}
+
+.setting button {
+    background-color: #4CAF50;
+    font-family: 'Comfortaa', 'Shadows Into Light', sans-serif;
+    color: #091E05;
+    text-align: center;
+    display: inline-block;
+    padding: 2px;
+    font-size: 12px;
+}
+.open li {
+    display: block;
+}
+.open li a{
+    display: block;
+}
 
 main{
     display: flex;
@@ -93,27 +145,10 @@ main{
     color: #F9B9C3;
     text-decoration: none;
     font-family: 'Comfortaa', 'Roboto', sans-serif;
-    font-size: 2%rem;
+    font-size: 2rem;
     padding: 5px;
     margin-top: -5px;
  }
-.button-box {
-    width: 80px;
-    background-color: #091E05;
-    color: #F9B9C3;
-    text-decoration: none;
-    font-family: 'Comfortaa', 'Roboto', sans-serif;
-    font-size: 1em;
-    text-align: center;
-    padding: 10px;
-    border: 5px solid #D87CAC;
-    border-radius: 5px;
-}
-.button-box:hover {
-    width: 90px;
-    background-color: #091E05;
-    color: #F9B9C3;
-}
 
 .image-slider {
     width: 80%;
@@ -132,6 +167,10 @@ main{
 
 .slider-image:first-child {
     display: block;
+}
+.card-container h2{
+    font-family: 'Comfortaa', 'Roboto', sans-serif;
+    font-size: 2rem;
 }
 
 

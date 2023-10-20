@@ -136,9 +136,9 @@ main{
     display: flex;
     flex-direction: column;
 }
-#hero-img {
-    width: auto;
-    height: 153px;
+.hero img {
+    width: 100%;
+    height: auto;
 }
  #title{
     background-color: #091E05;
@@ -168,11 +168,21 @@ main{
 .slider-image:first-child {
     display: block;
 }
+
+.weather-card {
+    border: solid #D87CAC;
+    font-family: 'Comfortaa', 'Roboto', sans-serif;
+    font-size: 2rem;
+    background-color: #091E05;
+    color: #F9B9C3;
+    padding: 10px;
+    max-width: 397px;
+    opacity: 75%;
+}
 .card-container h2{
     font-family: 'Comfortaa', 'Roboto', sans-serif;
     font-size: 2rem;
 }
-
 
 footer {
     display: flex;

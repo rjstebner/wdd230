@@ -18,7 +18,7 @@
 </head>
 <body>
     <header>
-        <img id="logo-top" src="images/torii.jpg" alt="torii gate">
+        <img id="logo-top" src="images/torii.webp" alt="torii gate">
         <div id="banner-content">
             <h2>Dazaifinance</h2>
             <p>For everything you need</p>
@@ -45,39 +45,49 @@
         
     </header>
     <main>
-        <section class="hero">
-            
-            <img id="hero-img" src="images/hero.jpg" alt="Hero image Here">
+        <div class="hero">
+            <picture>
+                <source srcset="images/fake-hero-small.webp" media="(max-width: 480px)">
+                <source srcset="images/fake-hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/fake-hero-large.webp" alt="hero-image">
+                
+
+                <!--<img id="hero-img" src="images/hero.jpg" alt="Hero image Here">-->
+
+            </picture>
             <h1 id="title">Dazaifu Chamber of Commerce</h1>
-        </section>
+        </div>
         <div class="event">
             <div class="image-slider">
-                <img src="images/image-1.jpg" class="slider-image" alt="image-1">
-                <img src="images/image-2.jpeg" class="slider-image" alt="image-2">
-                <img src="images/image-3.jpg" class="slider-image" alt="image-3">
+                <img src="images/image-1.webp" class="slider-image" alt="image-1">
+                <img src="images/image-2.webp" class="slider-image" alt="image-2">
+                <img src="images/image-3.webp" class="slider-image" alt="image-3">
             </div>
-            <div class="weather-card"> Weather sutff here</div>
+            <div class="weather-card">
+                <div id="weather-info"></div>    
+            </div>
+
         </div>
         <div class="home-grid">
             <section class="card-container" id="business-card">
-                <img src="images/store.png" class="card-img" alt="Business img">
+                <img src="images/store.webp" class="card-img" alt="Business img">
                 <h2>Local business</h2>
                 <p>This is where the infroamtion about local businesses goes</p>
             </section>
             <section class="card-container" id="stay-card">
-                <img src="images/hotel.jpg" class="card-img" alt="hotel img">
+                <img src="images/hotel.webp" class="card-img" alt="hotel img">
                 <h2>Where to Stay</h2>
                 <p>this is where the inforamtion about hwere to stay goes</p>
             </section>
             <section class="card-container" id="here-card">
-                <img src="images/bus.jpg" class="card-img" alt="bus img">
+                <img src="images/bus.webp" class="card-img" alt="bus img">
                 <h2>How to Get Here</h2>
                 <p>this is where the information of how to get here goes</p>
             </section>        
         </div>
     </main>
     <footer>
-        <img id="logo-bot" src="images/torii.jpg" alt="torii gate">
+        <img id="logo-bot" src="images/torii.webp" alt="torii gate">
         <div class="bottom-text">
             <p>Randy Stebner | </p>
             <p>WDD230 Project | </p>
@@ -85,6 +95,7 @@
             <p id="lastmodified"> | </p>
         </div>
     </footer>
+    <script src="sctipts/weather.js"></script>
     <script src="sctipts/menu.js"></script>
     <script src="sctipts/image-slider.js"></script>
     <script src="sctipts/getdates.js"></script>

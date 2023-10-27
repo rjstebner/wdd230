@@ -15,5 +15,7 @@
     .map {
         display: block; /* Ensure the iframe behaves like a block element */
         margin: 0 auto; /* Set horizontal margin to center the iframe */
+		width: 600px;
+		height: 450px;
     }
 }

@@ -222,13 +222,50 @@ footer {
 /* discorvy Css*/
 .discovery-grid {
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Changed 'grid-template-column' to 'grid-template-columns' and removed commas */
+    grid-template-columns: 190px auto; 
+    
 }
 
 .content-banner {
-    grid-column: 1 / 2; /* Changed 'column' to 'grid-column' */
+    grid-column: 1 / 2; 
+    border-right: solid #D87CAC;
+    border-bottom: solid #D87CAC;
+    background-color: #091E05;
+    width: 190px
+
+}
+#discover-1, #discover-2, #discover-3 {
+    border-bottom: solid #D87CAC;
+    color: #D87CAC;
+    margin: 0;
+    padding-top: 10px;
+}
+#discover-1 h2, #discover-2 h2, #discover-3 h2{
+    color: #F9B9C3;
+}
+#discover-1{
+    border-top: solid #D87CAC;
 }
 
+
 .image-grid {
-    grid-column: 2 / 3; /* Changed 'column' to 'grid-column' */
+    grid-column: 2 / 3; 
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 5px; 
+}
+
+h2 {
+    text-align: center; 
+    font-size: 18px;
+    margin-top: 10px; 
+    font-family: 'Comfortaa', 'Roboto', sans-serif;
+
 }

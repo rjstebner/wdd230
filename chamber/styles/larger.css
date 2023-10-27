@@ -92,16 +92,16 @@
     /* Start of discoverpage */
     .discovery-grid {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 190px auto;
     }
     .content-banner {
         grid-column: 1/2;
-        min-width: 200px
     }
     .image-grid {
+        width: 100%;
         grid-column: 2/3;
         display: grid;
-        grid-template-columns: 1fr, 1fr, 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     #img-1 {
         grid-column: 1/2;
@@ -113,9 +113,12 @@
         grid-column: 3/4;
     }
     .dis-img {
-        max-width: 100%;
-        height: auto;
         padding: 25px;
+        display: block;       
+    }
+    .dis-img:hover {
+        box-shadow: 0 0 50px #333;
+        opacity: .5;
     }
 
 }

@@ -101,7 +101,7 @@
     .image-grid {
         grid-column: 2/3;
         display: grid;
-        grid-template-columns: 1fr, 1fr;
+        grid-template-columns: 1fr 1fr;
     }
     #img-1 {
         grid-column: 1/2;

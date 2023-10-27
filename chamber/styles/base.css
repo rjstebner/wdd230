@@ -218,3 +218,17 @@ footer {
 #lastmodified {
     color: #ffffff;
 }
+
+/* discorvy Css*/
+.discovery-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Changed 'grid-template-column' to 'grid-template-columns' and removed commas */
+}
+
+.content-banner {
+    grid-column: 1 / 2; /* Changed 'column' to 'grid-column' */
+}
+
+.image-grid {
+    grid-column: 2 / 3; /* Changed 'column' to 'grid-column' */
+}

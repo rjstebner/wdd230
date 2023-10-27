@@ -1,4 +1,4 @@
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 1000px) {
     .navigation {
         display: flex;
     }
@@ -87,4 +87,35 @@
         grid-column: 6/7;
         grid-row: 2/3
     }
+
+
+    /* Start of discoverpage */
+    .discovery-grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .content-banner {
+        grid-column: 1/2;
+        min-width: 200px
+    }
+    .image-grid {
+        grid-column: 2/3;
+        display: grid;
+        grid-template-columns: 1fr, 1fr, 1fr;
+    }
+    #img-1 {
+        grid-column: 1/2;
+    }
+    #img-2 {
+        grid-column: 2/3;
+    }
+    #img-3 {
+        grid-column: 3/4;
+    }
+    .dis-img {
+        max-width: 100%;
+        height: auto;
+        padding: 25px;
+    }
+
 }

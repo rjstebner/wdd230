@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+main {
+    display: flex;
+    flex-direction: column;
+    
+}
+img {
+    padding: 5px;
+    background-color: black;
+}
+.fade-in {
+    opacity: 0; /* Start with 0 opacity */
+    animation: fadeIn 5s ease-in-out forwards; /* Apply the fade-in animation */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Start with 0 opacity */
+    }
+    to {
+      opacity: 1; /* End with full opacity */
+    }
+  }

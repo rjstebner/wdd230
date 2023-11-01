@@ -21,16 +21,40 @@
     <a id="menu" href="#"></a>
     <nav>
         <ul class="navigation">
-            <li><a href="#" title="Home" class="active">Home</a></li>
+            <li><a href="#" title="Home">Home</a></li>
             <li><a href="lesson03/chamber-site-plan.html" title="Site Plan">Site Plan</a></li>
             <li><a href="chamber/index.html" target="_blank" title="Chamber">Chamber</a></li>
             <li><a href="https://www.byui.edu/" target="_blank" title="Byu-Idaho">Byu-Idaho</a></li>
             <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/jacob/6?lang=eng" target="_blank" title="Jacob 6">Jacob 6</a></li>
+            <li><a href="form.html" target="_blank" title="Join" class="active">Join</a></li>
         </ul>
     </nav>
 
     <main>
-
+    <form method="get" action="record.html">
+        <label for="uname">Username:* </label>
+            <input type="text" class="top" id="uname" name="uname" required>
+        <label for="password">Password:* </label>
+            <input type="password" class="top" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}" title="Must be at least 8 characters and contain only alphanumeric characters">
+        <label for="confirm_password">Confirm Password:*</label>
+            <input type="password" class="top" id="confirm_password" name="confirm_password" required oninput="checkPassword()"><br>
+        <label for="email">Email:*</label>
+            <input type="email" name="email" class="top" id="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="please enter a valid Brigham Young Univerity email address">
+        <label>Rating:*</label>        
+        <div class="stars"> 
+            <input type="radio" id= "tenstar" name="stars" value="10" required><label for="tenstar"></label>
+            <input type="radio" id= "ninestar" name="stars" value="9" required><label for="ninestar"></label>
+            <input type="radio" id="eightstar" name="stars" value="8" required><label for="eightstar"></label>
+            <input type="radio" id="sevenstar" name="stars" value="7" required><label for="sevenstar"></label>
+            <input type="radio" id="sixstar" name="stars" value="6" required><label for="sixstar"></label>
+            <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+            <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+            <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+            <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+            <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+        </div>
+        <input type="submit" value="Join the Team" class="submitButton">
+    </form>
     </main>
     <footer>
         <p>&copy; <span id="currentYear"></span></p>
@@ -42,5 +66,6 @@
     <script src="scripts/menu.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/visit-counter.js"></script>
+    <script src="scripts/form.js"></script>
 </body>
 </html>

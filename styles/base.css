@@ -1,3 +1,15 @@
+:root {
+    /*-- Colours --*/
+    --primary-color: #091E05;
+    --secondary-color: #D87CAC;
+    --tertiary-color: #004F2D;
+    --accent-color: #F9B9C3;
+    /*-- Font Families--*/
+    --h-font: 'Comfortaa', 'Shadows Into Light', sans-serif;
+    --p-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
 /* Reset some default browser styles for consistency */
 body, h1, h2, h3, ul, li, p, img {
     margin: 0;
@@ -5,14 +17,11 @@ body, h1, h2, h3, ul, li, p, img {
     border: 0;
 }
 
-/* Rest of your CSS styles go here */
-
-
 /* Apply styles for the profile banner */
 header {
-    background-color: #091E05;
-    color: #F9B9C3;
-    text-align: center; /* Center align text within header */
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-align: center;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -22,23 +31,23 @@ header {
 
 .profile-banner {
     display: flex;
-    align-items: center; /* Vertically center align the items */
+    align-items: center;
 }
 
 .profile-image {
     width: 90px;
     height: auto;
     border-radius: 50%;
-    border: 5px solid #F9B9C3;
+    border: 5px solid var(--accent-color);
 }
 
 .profile-info {
     margin-left: 20px; /* Add spacing between image and info */
-    font-family: 'Comfortaa', 'Shadows Into Light', sans-serif;
+    font-family: var(--h-font);
 }
 
 .profile-name {
-    color: #F9B9C3;
+    color: var(--accent-color);
     font-size: 3em;
     margin-bottom: 5px;
 }
@@ -55,8 +64,8 @@ header {
 	font-weight:700;
 	text-decoration: none;
 	padding: .5rem .75rem;
-	background-color: #F9B9C3;
-	color: #091E05;
+	background-color: var(--accent-color);
+	color: var(--primary-color);
 }
 
 #menu::before {
@@ -64,7 +73,7 @@ header {
 }
 
 nav {
-	background-color: #D87CAC;
+	background-color: var(--secondary-color);
 }
 .navigation {
 	list-style: none;
@@ -80,18 +89,18 @@ nav {
 	padding: 0.75rem;
 	text-align: left;
 	text-decoration: none;
-	color: #004F2D;
+	color: var(--tertiary-color);
 	font-weight: 700;
 	transition: 0.5s;
-    font-family: 'Comfortaa', 'Shadows Into Light', sans-serif; 
+    font-family: var(--h-font);
 	font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 .active::after {
 	content: " 👀";
 }
 .navigation a:hover, navigation a:active {
-	color: #F9B9C3;
-	background-color:#091E05;
+	color: var(--accent-color);
+	background-color:var(--primary-color);
 }
 
 .show li {
@@ -105,13 +114,13 @@ nav {
     position: absolute;
     top: 250px;
     right: 0;
-    font-family: 'Comfortaa', 'Shadows Into Light', sans-serif; 
-	color: #F9B9C3;
-    background-color: #004F2D;
+    font-family: var(--h-font);
+	color: var(--accent-color);
+    background-color: var(--tertiary-color);
     margin-top: 15px;
     margin-right: 15px;
     padding: 10px;
-    border: solid #D87CAC;
+    border: solid var(--secondary-color);
     opacity: 50%;
 
 }
@@ -120,8 +129,8 @@ nav {
     height: auto;
 }
 .centered-heading {
-    font-family: 'Comfortaa', 'Shadows Into Light', sans-serif; 
-    color: #091E05;
+    font-family: var(--h-font);
+    color: var(--primary-color);
     text-align: center; /* Center-align the text */
     position: relative; /* Create a relative positioning context */
     padding-top: 20px;
@@ -133,33 +142,33 @@ nav {
 }
 .learning-activity {
     
-    padding: 10px; /* Add padding to the top part */
-    max-width: 80%; /* Set the maximum width to 75% of the viewport */
+    padding: 10px; 
+    max-width: 80%; 
     margin: 0 auto;
 }
 .activtiy-heading {
     text-align: center;
-    color: #091E05;
-    background-color: #D87CAC;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
     padding: 3px;
-    font-size: 1.5em; /* Adjust as needed */
-    font-family: 'Comfortaa', 'Shadows Into Light', sans-serif;
+    font-size: 1.5em;
+    font-family: var(--h-font);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin: 0; /* Remove default margins to ensure proper centering */
 }
 .activity-list {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--p-font);
     list-style: none; /* Remove default list styles */
-    padding: 10px; /* Add padding to the bottom part */
+    padding: 10px; 
     border: 2px solid #a4508b;
 }
 
 footer {
-    color: #F9B9C3;
+    color: var(--accent-color);
     text-align: center;
     position: relative;
-    background-color: #091E05;
+    background-color: var(--primary-color);
     font-size: 1.2em;
     padding: 20px;
     line-height: 1.5;
@@ -169,4 +178,89 @@ footer {
 }
 h4 {
     display: none;
+}
+/*------ Form CSS ------*/
+
+form {
+    margin: 2rem 0;
+    border: thin var(--accent-color);
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+form label{
+    display: block;
+    margin-top: .75rem;
+    width: 100%;
+    max-width: 23rem;
+    font-size: 1.2rem;
+    font-family: var(--h-font);
+    color: var(--primary-color);
+
+}
+
+.top {
+    width: 100%;
+    max-width: 23rem;
+    padding: 10px;
+}
+.top:required {
+    border-left: thick solid red;
+
+}
+.top:required:valid {
+    border-left: thick solid green;
+
+}
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+    margin-top: -.75rem;
+}
+.stars input {
+    display: none;
+}
+
+.stars > label {
+	color: gold;
+	width: 33px;
+	height: 40px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+}
+
+.stars > label:hover {
+	color: #000;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+form input.submitButton {
+    margin-top: .75rem;
+    width: 100%;
+    max-width: 23rem;
+    padding: 4px;
+    color: var(--tertiary-color);
+    background-color: var(--accent-color);
+    font-size: var(--h-font);
+}
+form input.submitButton:hover {
+    color: var(--accent-color);
+    background-color: var(--primary-color);
+}
+
+#record-message {
+    font-family: var(--p-font);
+    color: var(--tertiary-color);
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
 }

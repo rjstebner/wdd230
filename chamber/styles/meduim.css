@@ -114,5 +114,9 @@
         height: auto;
         padding: 25px;
     }
+    .dis-img:hover {
+        box-shadow: 0 0 50px #333;
+        opacity: .5;
+    }
 
 }

@@ -1,6 +1,8 @@
 const apiKey = '7bb22bbbb32c414085d13129231910';
 const city = 'dazaifu';
-const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
+const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
+
+
 
 
 function calculateWindChill(temperatureCelsius, windSpeedKph) {

@@ -77,9 +77,14 @@
         height: auto;
     }
     .dis-img:hover {
-        box-shadow: #333;
+        box-shadow: 0 0 5px #333;
         padding: 5px;
         opacity: .5;
     }
+
+    /* JOIN CSS */
+    form label.sbs {
+        padding: .4rem;
+      } 
 
 }

@@ -64,9 +64,12 @@
         display: block;
         width: 100%;       
     }
-    .dis-img:hover {
-        box-shadow: #333;
-        opacity: .5;
+    /*Join CSS*/
+    #join-t {
+        position: absolute;
+        top: 700px;
+        left: 410px;
+        
     }
 
 }

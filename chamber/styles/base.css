@@ -1,7 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto:wght@300&display=swap");
 :root {
+    /*-- Dark Mode Colours --*/
     --background-color: white;
     --text-color: black;
+
+        /*-- Colours --*/
+        --primary-color: #091E05;
+        --secondary-color: #D87CAC;
+        --tertiary-color: #004F2D;
+        --accent-color: #F9B9C3;
+        /*-- Font Families--*/
+        --h-font: 'Comfortaa', 'Shadows Into Light', sans-serif;
+        --p-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .dark-mode {
       --background-color: black;
@@ -12,8 +22,8 @@ body {
     color: var(--text-color);
 }
 header {
-    background-color: #091E05;
-    color: #F9B9C3;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
     text-align: center;
     padding: 20px;
     display: flex;
@@ -24,7 +34,7 @@ header {
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    border: 1px solid #F9B9C3;
+    border: 1px solid var(--accent-color);
     margin-left: 10px;
     margin-right: 5px;
 }
@@ -34,7 +44,7 @@ header {
     text-align: left;
 }
 #banner-content h2{
-    font-family: "Comfortaa", sans-serif;
+    font-family: var(--h-font);
 }
 #banner-content p{
     margin-top: -20px;
@@ -50,7 +60,7 @@ header {
     font-weight: 700;
     text-decoration: none;
     padding: 0.5rem 0.75rem;
-    color: #D87CAC;
+    color: var(--secondary-color);
     margin-top: 30px;
 }
 nav {
@@ -70,14 +80,14 @@ nav {
     padding: 0.75rem;
     text-align: left;
     text-decoration: none;
-    color: #F9B9C3;
+    color: var(--accent-color);
     transition: 0.5s;
-    font-family: 'Comfortaa', 'Shadows Into Light', sans-serif;
     font-size: clamp(1rem, 2vmin, 1.5rem);
+    font-family: var(--h-font);
 }
 .navigation a:hover, .navigation a:active {
-    color: #091E05;
-    background-color: #F9B9C3;
+    color: var(--primary-color);
+    background-color: var(--accent-color);
 }
 .show li {
     display: block;
@@ -87,8 +97,8 @@ nav {
 
 }
 .active {
-    border-top: 1px solid #F9B9C3;
-    border-bottom:  1px solid #F9B9C3;
+    border-top: 1px solid var(--accent-color);
+    border-bottom:  1px solid var(--accent-color);
 }
 
 #gear {
@@ -109,7 +119,7 @@ nav {
     position: absolute;
     top:4px;
     right: 0;
-    color: #D87CAC;
+    color: var(--secondary-color);
 }
 
 .setting li {
@@ -118,8 +128,8 @@ nav {
 
 .setting button {
     background-color: #4CAF50;
-    font-family: 'Comfortaa', 'Shadows Into Light', sans-serif;
-    color: #091E05;
+    font-family: var(--h-font);
+    color: var(--primary-color);
     text-align: center;
     display: inline-block;
     padding: 2px;
@@ -141,10 +151,10 @@ main{
     height: auto;
 }
  #title{
-    background-color: #091E05;
-    color: #F9B9C3;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
     text-decoration: none;
-    font-family: 'Comfortaa', 'Roboto', sans-serif;
+    font-family: var(--h-font);
     font-size: 2rem;
     padding: 5px;
     margin-top: -5px;
@@ -170,27 +180,27 @@ main{
 }
 
 .weather-card {
-    border: solid #D87CAC;
-    font-family: 'Comfortaa', 'Roboto', sans-serif;
+    border: solid var(--secondary-color);
+    font-family: var(--h-font);
     font-size: 2rem;
-    background-color: #091E05;
-    color: #F9B9C3;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
     padding: 10px;
     max-width: 397px;
     opacity: 75%;
 }
 .card-container h2{
-    font-family: 'Comfortaa', 'Roboto', sans-serif;
+    font-family: var(--h-font);
     font-size: 2rem;
 }
 
 footer {
     display: flex;
     flex-direction: row;
-    color: #F9B9C3;
+    color: var(--accent-color);
     text-align: center;
     position: relative;
-    background-color: #091E05;
+    background-color: var(--primary-color);
     font-size: .8em;
     padding: 20px;
     line-height: 1.5;
@@ -210,7 +220,7 @@ footer {
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    border: 1px solid #F9B9C3;
+    border: 1px solid var(--accent-color);
     margin-left: 10px;
     margin-right: 5px;
     margin-bottom: 15px;
@@ -228,23 +238,23 @@ footer {
 
 .content-banner {
     grid-column: 1 / 2; 
-    border-right: solid #D87CAC;
-    border-bottom: solid #D87CAC;
-    background-color: #091E05;
+    border-right: solid var(--secondary-color);
+    border-bottom: solid var(--secondary-color);
+    background-color: var(--primmary-color);
     width: 190px
 
 }
 #discover-1, #discover-2, #discover-3 {
-    border-bottom: solid #D87CAC;
-    color: #D87CAC;
+    border-bottom: solid var(--secondary-color);
+    color: var(--secondary-color);
     margin: 0;
     padding-top: 10px;
 }
 #discover-1 h2, #discover-2 h2, #discover-3 h2{
-    color: #F9B9C3;
+    color: var(--accent-color);
 }
 #discover-1{
-    border-top: solid #D87CAC;
+    border-top: solid var(--secondary-color);
 }
 .dis-img {
     width: 100%;
@@ -272,6 +282,99 @@ h2 {
     text-align: center; 
     font-size: 18px;
     margin-top: 10px; 
-    font-family: 'Comfortaa', 'Roboto', sans-serif;
+    font-family: var(--h-font);
 
 }
+/* join CSS */
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--tertiary-color);
+    border-radius: 10px;
+    padding: .5rem 2%;
+  }
+  form legend  {
+    color: var(--tertiary-color);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+  }
+  form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: var(--secondary-color);
+    font-size: .8rem;
+  }
+  form label.top input {
+    display: block;
+    font-size: 1rem;
+    border: grey solid 1px;
+    border-radius: 4px;
+    padding: .75rem;
+    color: darkgray;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+  }
+  form label.sbs {
+    display: block;
+    padding: .75rem;
+    color: darkgrey;
+  }
+  form input.submitButton {
+    border: none;
+    background-color: var(--tertiary-color);
+    color: var(--accent-color);
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 10px;
+    margin-top: -15px;
+    width: 96%;
+    max-width: 20rem;
+  }
+  form label.top input:required {
+    border-left: solid red 6px;
+  
+  }
+  form label.top input:required:valid {
+    border-left: green solid 6px;
+  }
+  /* join table */
+  #join-t {
+    max-width: 80%;
+    font-family: var(--text-color);
+    font-size: .96rem;
+    margin: 10px;
+    max-width: 460px;
+  }
+  #join-t caption {
+    display: none;
+  }
+
+  #join-t th, #join-t td {
+    border: solid 1px var(--primary-color);
+  }
+  #join-table-header {
+    font-family: var(--h-font);
+    font-size: 1.2rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+  #join-t thead {
+    background-color: var(--tertiary-color);
+    color: var(--accent-color);
+  }
+  #join-t tbody tr:nth-child(odd){
+    background-color: #eccbd0;
+  }
+  .yes {
+    color: green;
+  }
+  .no{
+    color: red;
+  }
+  /* Thankyou CSS */
+  #thanks{
+    text-align: center;
+    color: var(--primary-color);
+    font-family: var(--h-font);
+  }

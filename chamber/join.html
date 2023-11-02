@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stebner - WDD 230 - Chamber of Commerce</title>
+    <link rel="icon" href="images/torii-fav.ico">
+    <meta name="author" content="Randy Stebner">
+    <meta name="description" content="Chamber Home Page">    
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://thumbs.dreamstime.com/b/dazaifu-tenmangu-shrine-fukuoka-japan-june-111539523.jpg">
+    <meta property="og:url" content="https://rjstebner.github.io/wdd230/chamber">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/meduim.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <img id="logo-top" src="images/torii.webp" alt="torii gate">
+        <div id="banner-content">
+            <h2>Dazaifinance</h2>
+            <p>For everything you need</p>
+        </div>
+        <div>
+            <a id="gear"></a>
+            <ul class="setting">
+                <li>
+                    <button id="dark-mode">Dark Mode</button>
+                </li>
+            </ul>
+        </div>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li>
+                    <a href="index.html" title="Home">Home</a>
+                    <a href="#" title="Discover">Discover</a>
+                    <a href="#" title="Directory">Directory</a>
+                    <a href="#" class="active" title="Join">Join</a>
+                </li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+        <h1>Join the Chamber</h1>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">First Name*<input type="text" name="fname" required></label>
+                <label class="top">Last Name*<input type="text" name="lname" required></label>
+                <label class="top">Title/Position<input type="text" name="position" pattern="^[A-Za-z -]{7,}$" title="Please enter at least 7 characters containing only letters, hyphens, and spaces"></label>
+                <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required ></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Information</legend>
+                <label class="top">Business Name*<input type="text" name="bname" required></label>
+                <label class="top">Business Description<input type="text" name="bdescription" ></label>
+
+                <div>Membership Level</div>
+                <label class="sbs"><input type="radio" name="membership" value="gold"> Gold</label>
+                <label class="sbs"><input type="radio" name="membership" value="silver"> Silver</label>
+                <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze</label>
+                <label class="sbs"><input type="radio" name="membership" value="np"> Non-profit</label>
+            </fieldset>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+        
+            <input type="submit" value="Join the Chamber" class="submitButton">
+
+        </form>
+        <table id="join-t">
+            <caption>Table 1: Account Feature Comparison</caption>
+            <thead>
+                <tr>
+                    <th colspan="6" scope="colgroup" id="join-table-header">Chamber Benefits
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Cost</th>
+                    <th scope="col">Membership</th>
+                    <th scope="col">Special Events</th>
+                    <th scope="col">Advertizing</th>
+                    <th scope="col">Training</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gold</td>
+                    <td>1200¥/Month</td>
+                    <td class="yes">✔</td>
+                    <td class="yes">✔</td>
+                    <td class="yes">✔</td>
+                    <td class="yes">✔</td>
+
+
+                </tr>
+                <tr>
+                    <td>Silver</td>
+                    <td>800¥/Month</td>
+                    <td class="yes">✔</td>
+                    <td class="yes">✔</td>
+                    <td class="yes">✔</td>
+                    <td class="no">✖</td>
+
+
+
+        
+                </tr>
+                <tr>
+                    <td>Bronze</td>
+                    <td>400¥/Month</td>
+                    <td class="yes">✔</td>
+                    <td class="yes">✔</td>
+                    <td class="no">✖</td>
+                    <td class="no">✖</td>
+
+
+        
+                </tr>
+                <tr>
+                    <td>Non-profit</td>
+                    <td>Free!</td>
+                    <td class="yes">✔</td>
+                    <td class="no">✖</td>
+                    <td class="no">✖</td>
+                    <td class="no">✖</td>
+
+
+        
+                </tr>
+            
+            </tbody>
+        </table>
+
+    </main>
+    <footer>
+        <img id="logo-bot" src="images/torii.webp" alt="torii gate">
+        <div class="bottom-text">
+            <p>Randy Stebner | </p>
+            <p>WDD230 Project | </p>
+            <p id="currentYear"> | </p>
+            <p id="lastmodified"> | </p>
+        </div>
+    </footer>
+    <script src="sctipts/menu.js"></script>
+    <script src="sctipts/getdates.js"></script>
+    <script src="sctipts/darkmode.js"></script>
+</body>
+</html>

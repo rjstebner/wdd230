@@ -332,7 +332,7 @@ form fieldset {
     max-width: 20rem;
   }
   form label.top input:required {
-    border-left: solid red 6px;
+    border-left: solid rgb(255, 8, 8) 6px;
   
   }
   form label.top input:required:valid {

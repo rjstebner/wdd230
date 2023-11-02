@@ -240,7 +240,7 @@ footer {
     grid-column: 1 / 2; 
     border-right: solid var(--secondary-color);
     border-bottom: solid var(--secondary-color);
-    background-color: var(--primmary-color);
+    background-color: var(--primary-color);
     width: 190px
 
 }

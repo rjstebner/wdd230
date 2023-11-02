@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stebner - WDD 230 - Chamber of Commerce</title>
+    <title>Stebner - WDD 230 - Join Page</title>
     <link rel="icon" href="images/torii-fav.ico">
     <meta name="author" content="Randy Stebner">
-    <meta name="description" content="Chamber Home Page">    
+    <meta name="description" content="Chamber Join Page">    
     <meta property="og:title" content="Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://thumbs.dreamstime.com/b/dazaifu-tenmangu-shrine-fukuoka-japan-june-111539523.jpg">
@@ -58,7 +58,9 @@
             <fieldset>
                 <legend>Business Information</legend>
                 <label class="top">Business Name*<input type="text" name="bname" required></label>
-                <label class="top">Business Description<input type="text" name="bdescription" ></label>
+                <label class="top" for="bdescription">Business Description</label>
+                    <textarea name="bdescription" id="bdescription"></textarea>
+
 
                 <div>Membership Level</div>
                 <label class="sbs"><input type="radio" name="membership" value="gold"> Gold</label>

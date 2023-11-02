@@ -249,6 +249,9 @@ footer {
 .dis-img {
     width: 100%;
 }
+.dis-img img{
+    width: 100%;
+}
 
 
 .image-grid {

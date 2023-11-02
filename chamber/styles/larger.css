@@ -38,7 +38,9 @@
     /* Start of discoverpage */
     .discovery-grid {
         display: grid;
-        grid-template-columns: 190px auto;
+        grid-template-columns: 1fr 4fr;
+        margin-right: 10px;
+
     }
     .content-banner {
         grid-column: 1/2;
@@ -59,11 +61,11 @@
         grid-column: 3/4;
     }
     .dis-img {
-        padding: 25px;
-        display: block;       
+        display: block;
+        width: 100%;       
     }
     .dis-img:hover {
-        box-shadow: 0 0 50px #333;
+        box-shadow: #333;
         opacity: .5;
     }
 

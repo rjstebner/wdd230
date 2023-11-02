@@ -3,8 +3,6 @@ const city = 'dazaifu';
 const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
 
 
-
-
 function calculateWindChill(temperatureCelsius, windSpeedKph) {
   if (temperatureCelsius <= 10 && windSpeedKph > 4.8) {
     const windChill = 13.12 + 0.6215 * temperatureCelsius - 11.37 * Math.pow(windSpeedKph, 0.16) + 0.3965 * temperatureCelsius * Math.pow(windSpeedKph, 0.16);

@@ -211,40 +211,10 @@ form label{
     border-left: thick solid green;
 
 }
-.stars {
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: left;
-    margin-top: -.75rem;
-}
-.stars input {
-    display: none;
-}
 
-.stars > label {
-	color: gold;
-	width: 33px;
-	height: 40px;
-	font-size: 2rem;
-	margin-left: 5px;
-	display: flex;
-	align-items: center;
-	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
-}
-
-.stars > label:hover {
-	color: #000;
-}
-
-.stars > label::before {
-	content: "\2606";
-}
-
-.stars input:checked ~ label::before {
-	content: "\2605";
-}
 form input.submitButton {
-    margin-top: .75rem;
+    display: block;
+    margin-top: 1.3rem;
     width: 100%;
     max-width: 23rem;
     padding: 4px;
@@ -253,8 +223,19 @@ form input.submitButton {
     font-size: var(--h-font);
 }
 form input.submitButton:hover {
+    display: block;
     color: var(--accent-color);
     background-color: var(--primary-color);
+}
+#outputValue {
+    display: block;
+    font-family: var(--h-font);
+    color: var(--primary-color);
+}
+#rating {
+    color: #F9B9C3;
+    width: 100%;
+    max-width: 23rem;
 }
 
 #record-message {

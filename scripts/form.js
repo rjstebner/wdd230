@@ -8,3 +8,12 @@ function checkPassword() {
         confirm_password.setCustomValidity("");
     }
 }
+
+const rangeInput = document.getElementById("rating");
+const outputValue = document.getElementById("outputValue");
+
+outputValue.textContent = rangeInput.value;
+
+rangeInput.addEventListener("input", function () {
+outputValue.textContent = rangeInput.value;
+});

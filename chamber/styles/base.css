@@ -244,6 +244,13 @@ footer {
     width: 190px
 
 }
+.current-day {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border-radius: 50%;
+    padding: -10px;
+}
+
 #discover-1, #discover-2, #discover-3 {
     border-bottom: solid var(--secondary-color);
     color: var(--secondary-color);

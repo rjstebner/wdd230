@@ -1,0 +1,29 @@
+{
+    "familyName": "Smith",
+    "moveInDate": "2022-05-15",
+    "familySize": 4,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "John Smith",
+        "gender": "Male",
+        "birthdate": "1980-03-10"
+      },
+      {
+        "name": "Mary Smith",
+        "gender": "Female",
+        "birthdate": "1982-07-25"
+      },
+      {
+        "name": "James Smith",
+        "gender": "Male",
+        "birthdate": "2005-12-18"
+      },
+      {
+        "name": "Emily Smith",
+        "gender": "Female",
+        "birthdate": "2010-09-02"
+      }
+    ]
+  }
+  

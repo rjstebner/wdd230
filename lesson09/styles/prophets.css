@@ -1,0 +1,39 @@
+/* Style for the prophet cards */
+h1 {
+    text-align: center;
+    color: #00539C;
+
+}
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 1cap;
+    justify-items: center;
+  }
+.prophet-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #FCF6F5;
+    text-align: center;
+  }
+  
+
+.prophet-card h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #990011;
+
+}
+
+.prophet-card p {
+    font-size: 1rem;
+    margin: 0;
+    color: #990011
+}
+.prophet-card img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}

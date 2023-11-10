@@ -408,7 +408,7 @@ form fieldset {
 
 #cards.grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 350px));
     grid-gap: 1rem;
     justify-items: center;
 }
@@ -417,7 +417,9 @@ form fieldset {
     border: 1px solid #ccc;
     padding: 10px;
     margin: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 9px 18px rgba(0, 0, 0, 0.2) inset;
+
     background-color: #FCF6F5;
     text-align: center;
 }
@@ -434,13 +436,13 @@ form fieldset {
     max-width: 100px;
     height: auto;
     margin: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #cards.grid .company-card p, #cards.grid .company-card a {
     font-size: 1rem;
     margin: 0;
     color: var(--primary-color);
+    font-family: var(--p-font);
 }
 
 
@@ -487,6 +489,8 @@ form fieldset {
 #cards.list .company-card p, #cards.list .company-card a {
     font-size: 1rem;
     color: var(--primary-color);
+    font-family: var(--p-font);
+
     margin: 0;
 
 }

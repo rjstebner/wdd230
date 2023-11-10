@@ -469,6 +469,11 @@ form fieldset {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #FCF6F5;
 }
+#cards.list .company-card:nth-child(even){
+    justify-content: left;
+    border: 1px solid #ccc;
+    background-color: #f5fcf6;
+}
 
 #cards.list .company-card h2 {
     text-align: left;

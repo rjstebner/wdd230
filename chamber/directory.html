@@ -36,8 +36,8 @@
             <ul class="navigation">
                 <li>
                     <a href="index.html" title="Home">Home</a>
-                    <a href="#" class="active" title="Discover">Discover</a>
-                    <a href="directory.html" title="Directory">Directory</a>
+                    <a href="discover.html" class="active" title="Discover">Discover</a>
+                    <a href="#" title="Directory">Directory</a>
                     <a href="join.html" title="Join">Join</a>
                 </li>
             </ul>
@@ -45,33 +45,11 @@
         
     </header>
     <main>
-        <div class="discovery-grid">
-            <div class="content-banner">
-                <section id="discover-1">
-                    <h2>Title</h2>
-                    <p id="weather-info"></p>
-                </section>
-                <section id="discover-2">
-                    <h2>View Tracker</h2>
-                    <p class="visits-message">This is your first visit.</p>
-                    <p class="visit-counter">Visits: <span id="visit-count">0</span></p>
-                </section>
-                <section id="discover-3">
-                    <div id="calendar"></div>
-                </section>
-
-            </div>
-            <div class="image-grid">
-                <div class="dis-img" id="img-1"><img src="images/store.webp" alt="thing" loading="lazy"></div>
-                <div class="dis-img" id="img-2"><img src="images/store.webp" alt="thing" loading="lazy"></div>
-                <div class="dis-img" id="img-3"><img src="images/store.webp" alt="thing" loading="lazy"></div>
-                <div class="dis-img" id="img-4"><img src="images/store.webp" alt="thing" loading="lazy"></div>
-                <div class="dis-img" id="img-5"><img src="images/store.webp" alt="thing" loading="lazy"></div>
-                <div class="dis-img" id="img-6"><img src="images/store.webp" alt="thing" loading="lazy"></div>
-
-            </div>
-
+        <div class="dis-menu">
+            <button id="grid"> 𝄜 Grid</button>
+            <button id="list"> 📄 List</button>
         </div>
+        <div id="cards"></div>
     </main>
     <footer>
         <img id="logo-bot" src="images/torii.webp" alt="torii gate">
@@ -83,9 +61,8 @@
         </div>
     </footer>
     <script src="sctipts/menu.js"></script>
-    <script src="sctipts/darkmode.js"></script>
-    <script src="sctipts/visit-counter-dis.js"></script>
-    <script src="sctipts/weather.js"></script>
     <script src="sctipts/getdates.js"></script>
+    <script src="sctipts/darkmode.js"></script>
+    <script src="sctipts/directory.js"></script>
 </body>
 </html>

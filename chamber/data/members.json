@@ -1,0 +1,68 @@
+{
+    "companies": [
+      {
+        "name": "丸太工房　ナガイ商店",
+        "address": "福岡県太宰府市吉松1-11-5",
+        "phone": "080-3986-6897",
+        "website": "http://maruta-nagai.com/",
+        "imageurl": "https://dazaifu.com/wp02/wp-content/uploads/conts_img01.jpg",
+        "membership_level": "Gold",
+        "other_information": "wooden bori (dragon) production"
+      },
+      {
+        "name": "カフェ観音",
+        "address": "太宰府市観世音寺1-8-1",
+        "phone": "092-921-0305",
+        "website": "N/A",
+        "imageurl": "https://dazaifu.com/wp02/wp-content/uploads/0f6d53222d2cfaa8c87fa01e99188e0a.jpg",
+        "membership_level": "Silver",
+        "other_information": "Scandinavian/Japanese space café."
+      },
+      {
+        "name": "山本のハンバーグ太宰府店",
+        "address": "太宰府市大佐野3-11-12",
+        "phone": "092-561-9802",
+        "website": "http://yamamotonohamburgdazaihu.owst.jp",
+        "imageurl": "https://dazaifu.com/wp02/wp-content/uploads/b347716541a35bd7735aa583e6abc3f9.jpg",
+        "membership_level": "Bronze",
+        "other_information": "Hamburger Restraunt"
+      },
+      {
+        "name": "人と木",
+        "address": "太宰府市内山609-9",
+        "phone": "092-929-6639",
+        "website": "N/A",
+        "imageurl": "https://dazaifu.com/wp02/wp-content/uploads/img240.jpg",
+        "membership_level": "Platinum",
+        "other_information": "Apple Collection and Baking Class"
+      },
+      {
+        "name": "ZAKKA COZA-Parici-",
+        "address": "太宰府市観世音寺1-7-47",
+        "phone": "092-926-0648",
+        "website": "http://zakkacoza.com/",
+        "imageurl": "https://dazaifu.com/wp02/wp-content/uploads/14062813454192sy_l-300x199-1.jpg",
+        "membership_level": "Gold",
+        "other_information": "Australian and European antiques, antiques, and new but shabby chic things.."
+      },
+      {
+        "name": "九州ヴォイス",
+        "address": "太宰府市宰府3-4-45",
+        "phone": "092-403-0430",
+        "website": "http://www.fuda-japan.org",
+        "imageurl": "https://dazaifu.com/wp02/wp-content/uploads/63a1415e08ae2c296816d2ee4ca73884.jpg",
+        "membership_level": "Silver",
+        "other_information": "Miscellaneous goods and food in Kyushu"
+      },
+      {
+        "name": "有限会社小野東風軒",
+        "address": "太宰府市宰府2-7-31",
+        "phone": "092-922-4074",
+        "website": "https://www.ono-toufu.co.jp/",
+        "imageurl": "https://dazaifu.com/wp02/wp-content/uploads/2020/03/img1.jpg",
+        "membership_level": "Gold",
+        "other_information": "Craft shops (pottery, dolls, calligraphy)"
+      }
+    ]
+  }
+  

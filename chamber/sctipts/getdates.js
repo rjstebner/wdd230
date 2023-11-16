@@ -70,5 +70,3 @@ function createCalendar(year, month) {
     calendarElement.innerHTML = calendarHTML;
 }
 
-const currentMonth = new Date().getMonth();
-createCalendar(currentYear, currentMonth);

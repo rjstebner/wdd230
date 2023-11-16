@@ -1,29 +1,27 @@
-const apiKey = '7bb22bbbb32c414085d13129231910';
-const city = 'dazaifu';
-const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
+const url = 'https://api.openweathermap.org/data/2.5/weather';
+const latitude = 33.51; 
+const longitude = 130.52;
+const apiKey = '967b3cce833ff371e48d7dd79d54a3f9';
 
+const queryParams = `?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`;
+const finalUrl = `${url}${queryParams}`;
 
-function calculateWindChill(temperatureCelsius, windSpeedKph) {
-  if (temperatureCelsius <= 10 && windSpeedKph > 4.8) {
-    const windChill = 13.12 + 0.6215 * temperatureCelsius - 11.37 * Math.pow(windSpeedKph, 0.16) + 0.3965 * temperatureCelsius * Math.pow(windSpeedKph, 0.16);
-    return Math.round(windChill) + '°C';
-  } else {
-    return 'N/A'; // To warm to calculate windchill
-  }
-}
-
-fetch(apiUrl)
+fetch(finalUrl)
   .then(response => response.json())
   .then(data => {
-    const weatherInfo = data.current;
-    const temperatureCelsius = weatherInfo.temp_c;
-    const condition = weatherInfo.condition.text;
-    const windSpeedKph = weatherInfo.wind_kph;
+    const temperatureCelsius = Math.round(data.main.temp);
+    const condition = data.weather[0].description;
+    const iconCode = data.weather[0].icon;
 
-    const windChill = calculateWindChill(temperatureCelsius, windSpeedKph);
+    const weatherDisplay = `Temperature: ${temperatureCelsius}°C, Condition: ${condition}`;
+    const weatherText = document.createElement('p');
+    weatherText.textContent = weatherDisplay;
+    document.getElementById('weather-info').appendChild(weatherText);
 
-    const weatherDisplay = `Temperature: ${temperatureCelsius}°C, Condition: ${condition}, Windchill: ${windChill}`;
-    document.getElementById('weather-info').textContent = weatherDisplay;
+    const iconUrl = `https://openweathermap.org/img/wn/${iconCode}.png`;
+    const iconImage = document.createElement('img');
+    iconImage.src = iconUrl;
+    document.getElementById('weather-info').appendChild(iconImage);
   })
   .catch(error => {
     console.error('Error fetching weather data: ', error);

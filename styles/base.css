@@ -163,6 +163,22 @@ nav {
     padding: 10px; 
     border: 2px solid #a4508b;
 }
+#weather-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+}
+
+#weather-info img {
+    width: 50px; 
+    height: 50px; 
+    margin-right: 10px; 
+}
+
+#weather-info p {
+    font-size: 16px;
+}
 
 footer {
     color: var(--accent-color);

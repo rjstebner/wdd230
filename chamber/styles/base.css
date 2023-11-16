@@ -161,7 +161,7 @@ main{
  }
 
 .image-slider {
-    width: 80%;
+    width: 100%;
     height: auto;
     max-width: 355px;
     max-height: 355px;
@@ -186,9 +186,17 @@ main{
     background-color: var(--primary-color);
     color: var(--accent-color);
     padding: 10px;
-    max-width: 397px;
+    width: 80%;
     opacity: 75%;
 }
+#weather-info img {
+    width: 75px;
+    margin-left: auto;
+}
+#weather-info p {
+    margin-bottom: 0;
+}
+
 .card-container h2{
     font-family: var(--h-font);
     font-size: 2rem;

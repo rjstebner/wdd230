@@ -193,6 +193,8 @@ main{
     height: auto;
     max-width: 355px;
     max-height: 355px;
+    min-width: 350;
+    min-height: 350;
     overflow: hidden;
     position: relative;
     
@@ -214,7 +216,7 @@ main{
     background-color: var(--primary-color);
     color: var(--accent-color);
     padding: 10px;
-    width: 80%;
+    width: 100%;
     opacity: 75%;
 }
 #weather-info img {
@@ -228,6 +230,9 @@ main{
 .card-container h2{
     font-family: var(--h-font);
     font-size: 2rem;
+}
+.card-container img{
+ width: 100%;
 }
 
 footer {
@@ -265,7 +270,7 @@ footer {
     color: #ffffff;
 }
 
-/* discorvy Css*/
+/* Discover Css*/
 .discovery-grid {
     display: grid;
     grid-template-columns: 190px auto; 

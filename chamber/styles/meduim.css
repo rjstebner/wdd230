@@ -15,23 +15,22 @@
     #menu {
         display: none;
     }
-    #hero-img 
-    {
+    #hero-img     {
         height: 300px;
         width: auto;
     }
     .event {
-        display: flex;
-    }
-    .image-slider {
-        grid-row: 1/3;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 350px));
+        grid-gap: 1rem;
+        justify-items: center;
     }
     .weather-card {
-        display: grid;
-        grid-column: 2/3;
-        grid-row: 1/2;
-        width:100%;
+        width: 100%;
+        font-family: var(--h-font);
+        font-size: 1.2rem;
     }
+
     .home-grid{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -46,7 +45,7 @@
     }
 
 
-    /* Start of discoverpage */
+    /* Start of discover page */
     .discovery-grid {
         display: grid;
         grid-template-columns: 1fr 3fr;

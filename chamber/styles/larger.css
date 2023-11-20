@@ -20,13 +20,6 @@
         height: 300px;
         width: auto;
     }
-    .event {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-    }
-    .image-slider {
-        grid-row: 1/3;
-    }
     .weather-card {
         display: grid;
         grid-column: 2/3;
@@ -34,7 +27,7 @@
     }
 
 
-    /* Start of discoverpage */
+    /* Start of discover page */
     .discovery-grid {
         display: grid;
         grid-template-columns: 1fr 4fr;

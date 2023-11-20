@@ -193,8 +193,8 @@ main{
     height: auto;
     max-width: 355px;
     max-height: 355px;
-    min-width: 350;
-    min-height: 350;
+    min-width: 350px;
+    min-height: 350px;
     overflow: hidden;
     position: relative;
     

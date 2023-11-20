@@ -7,14 +7,14 @@ document.getElementById('lastmodified').textContent = formattedLastModified;
 
 const timestampField = document.getElementById('timestamp');
 if (timestampField) {
-  timestampField.value = lastModified.toISOString(); // You can format this as needed
+  timestampField.value = lastModified.toISOString();
 }
 
-function createCalendar(year, month) {
+function createCalendar(year = new Date().getFullYear(), month = new Date().getMonth()) {
     const calendarElement = document.getElementById('calendar');
     const daysInMonth = new Date(year, month + 1, 0).getDate();
-    const currentDay = new Date().getDate(); // Get the current day of the month
-    const firstDay = new Date(year, month, 1).getDay(); // Get the day of the week for the first day of the month
+    const currentDay = new Date().getDate(); 
+    const firstDay = new Date(year, month, 1).getDay();
 
     // Japanese month names
     const monthNames = ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"];
@@ -23,7 +23,7 @@ function createCalendar(year, month) {
     // Japanese day names
     const dayNames = ["日", "月", "火", "水", "木", "金", "土"];
 
-    // Create the header with the month and year
+   
     let calendarHTML = `<h2>${year}年 ${currentMonthName}</h2>`;
     calendarHTML += '<table>';
     calendarHTML += '<tr><th>日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th></tr>';
@@ -41,7 +41,7 @@ function createCalendar(year, month) {
     for (let i = firstDay; i < 7; i++) {
       if (dayCount <= daysInMonth) {
           if (dayCount === currentDay) {
-              calendarHTML += `<td class="current-day">${dayCount}</td>`; // Highlight the current day in blue
+              calendarHTML += `<td class="current-day">${dayCount}</td>`; // Highlight the current day
           } else {
               calendarHTML += `<td>${dayCount}</td>`;
           }
@@ -56,7 +56,7 @@ function createCalendar(year, month) {
         for (let j = 0; j < 7; j++) {
             if (dayCount <= daysInMonth) {
                 if (dayCount === currentDay) {
-                    calendarHTML += `<td class="current-day">${dayCount}</td>`; // Highlight the current day
+                    calendarHTML += `<td class="current-day">${dayCount}</td>`;
                 } else {
                     calendarHTML += `<td>${dayCount}</td>`;
                 }
@@ -70,3 +70,4 @@ function createCalendar(year, month) {
     calendarElement.innerHTML = calendarHTML;
 }
 
+createCalendar();

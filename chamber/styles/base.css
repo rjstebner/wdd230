@@ -306,6 +306,7 @@ footer {
 }
 .dis-img {
     width: 100%;
+    padding-top: 10px;
 }
 .dis-img img{
     width: 100%;

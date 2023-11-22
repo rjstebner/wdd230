@@ -226,6 +226,39 @@ main{
     margin-bottom: 0;
 }
 
+.spotlight {
+    border: #000 solid;
+    padding: 5px;
+    margin: 10px;
+    background-color: #ffeff1;
+}
+.spotlight h2 {
+font-size: 2rem;
+}
+#spotlight {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 350px));
+    grid-gap: 1rem;
+    justify-items: center;
+    margin: auto;
+
+
+}
+.company-spotlight {
+    background-color: #f4d6db;
+    color: var(--primary-color);
+    padding: 15px;
+    border: #000 1px;
+    width: 80%;
+    margin: 20px;
+    box-shadow: 0 2px 4px var(--primary-color), 0 6px 12px var(--secondary-color), 0 2px 4px var(--primary-color), 0 2px 4px var(--secondary-color)  inset;
+}
+.company-spotlight a{
+    color: var(--primary-color);
+}
+.card-container {
+    margin: 3px;
+}
 .card-container h2{
     font-family: var(--h-font);
     font-size: 2rem;

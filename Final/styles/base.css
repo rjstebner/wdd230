@@ -98,7 +98,7 @@ nav {
     margin: auto;
     overflow: hidden;
     height: 166px;
-    z-index: 1; /* Set a value appropriate for your layout */
+    z-index: 1;
 }
 .fade {
     position: absolute;
@@ -176,7 +176,7 @@ nav {
 
 }
 #weather-container img {
-    vertical-align: middle; /* Adjust the value as needed */
+    vertical-align: middle;
 }
 
 .alert {
@@ -221,7 +221,7 @@ p {
     display: block;
     position: absolute;
     top: 50%;
-    width: 10%; /* Adjust the width of the lines as needed */
+    width: 10%;
     height: 3px;
     background-color: var(--pri-colour);
 }

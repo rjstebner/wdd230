@@ -3,9 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Stebner - WDD 230 - Chamber of Commerce</title>
+    <link rel="icon" href="...">
+    <meta name="author" content="Randy Stebner">
+    <meta name="description" content="Scoots Rentals Homepage">    
+    <meta property="og:title" content="Scoots">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="...">
+    <meta property="og:url" content="...">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
+    <header>
+        <div class="logo" id="logo-top">
+            <img src="images/Scooter-removebg-preview.webp" alt="logo">
+        </div>
+        <div class="socials" id="soc-top">
+            <a target="_blank" href="contact.html"><img src="images/contact.webp" alt="contact"></a>
+            <a target="_blank" href="https://www.facebook.com/"><img src="images/facebook.webp" alt="facebook"></a>
+            <a target="_blank" href="https://twitter.com/"><img src="images/xitter.webp" alt="twitter"></a>
+        </div>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li>
+                    <a href="#" class="active" title="Home">Home</a>
+                    <a href="rentals.html" title="Rentals">Rentals</a>
+                    <a href="reservation.html" title="Reservations">Reservations</a>
+                    <a href="contact.html" title="Contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-box">
+            <div class="hero-slider">
+                <picture class="fade">
+                    <source srcset="images/Beach-small.webp" media="(max-width: 500px)">
+                    <source srcset="images/Beach-medium.webp" media="(max-width: 1000px)">
+                    <img src="images/Beach.webp" alt="hero-image">
+                </picture>
+                <picture class="fade">
+                    <source srcset="images/Jeep-on-beach-small.webp" media="(max-width: 480px)">
+                    <source srcset="images/Jeep-on-beach-medium.webp" media="(max-width: 1000px)">
+                    <img src="images/Jeep-on-beach.webp" alt="hero-image">
+                </picture>
+                <picture class="fade">
+                    <source srcset="images/Scooter-on-Beach-small.webp" media="(max-width: 480px)">
+                    <source srcset="images/Scooter-on-Beach-medium.webp" media="(max-width: 1000px)">
+                    <img src="images/Scooter-on-Beach.webp" alt="hero-image">
+                </picture>              
+            </div>
+            <div class="hero-text">
+                <h4>Explore Cozumel Like Never Before</h4>
+                <a href="reservation.html">Make a Reservation Now and Live your Dream</a>
+            </div>
+        </div>
+        <div class="home-grid">
+            <div id="location-conatiner" class="card">
+                <h2>Locations</h2>
+                <h4 class="toggle">Click to See</h4>
+                <div class="toggle-content" id="location" >
+                    <a target="_blank" href="https://www.google.com/maps/place/Playa+del+Carmen/@20.6250779,-87.0756257,17z/data=!4m15!1m8!3m7!1s0x8f4e433b08252581:0x8f6704a32c11e20d!2sCalle+4+Nte+S%2FN,+entre+Av.10+y+Av.15,+Centro,+77710+Playa+del+Carmen,+Q.R.,+Mexico!3b1!8m2!3d20.6250779!4d-87.0756257!16s%2Fg%2F11bw4m2lcb!3m5!1s0x8f4e433a114b735b:0x5e3ff85d26283cfa!8m2!3d20.6230687!4d-87.0733444!16s%2Fg%2F11j4kcdfpj?entry=ttu">
+                        <h5>Calle 4 Nte s/n, entre Av.10 y Av.15 Centro</h5>
+                        <p>Cozumel Q.R.</p>
+                    </a>
+                    <a target="_blank" href="https://www.google.com/maps/place/Av.+Rafael+E.+Melgar+1,+77675+Cozumel,+Q.R.,+Mexico/@20.4785354,-86.9732604,17z/data=!3m1!4b1!4m6!3m5!1s0x8f4e574f41567e33:0x21086808d9f431d2!8m2!3d20.4785354!4d-86.9732604!16s%2Fg%2F11c2jrd0h7?entry=ttu">
+                        <h5>Av. Rafeal E. Melgar 1</h5>
+                        <p>Cozumel Q.R.</p>
+                    </a>
+                </div>
     
+            </div>
+            <div class="weather">
+                <div id="weather-container">
+                    <div class="alert" id="alert-container">
+                        <!-- Weather alert will be displayed here -->
+                    </div>
+                    <h1>Today in Cozumel</h1>
+                    <div id="current-weather">
+                        <p id="temperature">Temperature: </p>
+                        <p id="humidity">Humidity: </p>
+                    </div>
+                    <div class="card" id="forecast">
+                        <h2 class="toggle">See More</h2>
+                        <p class="toggle-content" id="forecast-details">Loading...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="vehicle-title">Our Vehicles</h2>
+        <div class="vehicles">
+            <div class="card" id="scooter-card">
+                <h4 class="toggle">Scooters</h4>
+                <img src="images/metro.webp" class="toggle-image" alt="scooter image">
+                <p class="toggle-content">Effortless Urban Exploration: <br>
+                    Discover the city at your own pace with our stylish and fuel-efficient scooters. Zip through traffic, find hidden gems, and enjoy the freedom of easy parking. Make every journey an adventure.</p>
+            </div>
+            <div class="card" id="atv-card">
+                <h4 class="toggle">ATVs</h4>
+                <img src="images/ATV.webp" class="toggle-image" alt="atv image">
+                <p class="toggle-content">Explore Beyond Limits: <br>
+                    Break free from conventional travel and explore remote landscapes and hidden trails. Our ATVs are built to handle diverse terrains, providing you with an unparalleled sense of freedom and excitement.</p>
+            </div>
+            <div class="card" id="jeep-card">
+                <h4 class="toggle">Jeeps</h4>
+                <img src="images/jeep-2door.webp" class="toggle-image" alt="jeep image">
+                <p class="toggle-content">Group Excursions Made Memorable: <br>
+                    Planning a group adventure? The Jeep accommodates friends and family, turning every trip into a memorable group experience. With ample space and seating, everyone can join in on the excitement.</p>
+            </div>
+        </div>
+        <footer>
+            <div class="logo" id="logo-bottom">
+                <img src="images/Scooter.webp" alt="">
+            </div>
+                <ul>
+                    <li>
+                        <a href="rentals.html" title="Rentals">Rentals</a>
+                        <a href="reservation.html" title="Reservations">Reservations</a>
+                        <a href="contact.html" title="Contact">Contact</a>
+                    </li>
+
+                </ul>
+        </footer>
+        <script src="scipts/menu.js"></script>
+        <script src="scipts/image-slider.js"></script>
+        <script src="scipts/weather.js"></script>
+    </main>
 </body>
 </html>

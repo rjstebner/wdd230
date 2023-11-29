@@ -1,0 +1,21 @@
+@media only screen and (min-width: 1000px) {
+    .hero-slider {
+        height: 600px;
+    }
+    
+    .hero-text {
+        top: -10rem;
+    }
+    #vehicle-title::before, #vehicle-title::after {
+        width: 35%;
+    }
+    .home-grid {
+        grid-template-columns: 30% 30%;
+    }
+    .vehicles p {
+        width: 80%;
+        margin-bottom: 15px;
+        padding-bottom: 20px;
+    }
+
+}

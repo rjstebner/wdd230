@@ -1,0 +1,278 @@
+:root {
+    /*-- Colours --*/
+    --pri-colour : #214E78;
+    --sec-colour : #F2BB05;
+    --a1-colour : #4ecdc4;
+    --a2-colour : #f7fff7;
+}
+
+.logo img {
+    width: 50px;
+}
+.logo {
+    background-color: var(--a2-colour);
+}
+#soc-top {
+    position: absolute; top: 0; right: 0;
+}
+.socials img {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+}
+
+/*-- Naviation CSS --*/
+
+header{
+    background-color: var(--pri-colour);
+}
+#menu {
+    text-decoration: none;
+    padding-top: 5px;
+    position: relative;
+    top: .3rem;
+    
+}
+#menu::before {
+    content: "≡";
+    color: var(--sec-colour);
+    font-size: 3rem;
+}
+#menu.show::before{
+    content: "X";
+    color: var(--sec-colour);
+    font-size: 2rem;
+
+}
+#menu {
+    font-size: 2rem;
+    
+}
+nav {
+    color: var(--sec-colour);
+    display: flex;
+    flex-direction: column;
+
+}
+.navigation {
+    list-style-type: none;
+
+
+}
+.navigation li {
+    display: none;
+}
+.navigation.show li {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--pri-colour);
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -3.3rem;
+}
+.navigation.show a {
+    color: var(--a2-colour);
+    font-size: 2rem;
+    margin: 0;
+    padding: 5px;
+    text-decoration: none;
+    text-align: left;
+
+}
+.navigation.show a:hover{
+    background-color: var(--sec-colour);
+    color: var(--pri-colour)
+}
+
+/*-- Hero CSS --*/
+.hero-box {
+    margin: 0;
+}
+.hero-slider {
+    position: relative;
+    max-width: 1800px;
+    margin: auto;
+    overflow: hidden;
+    height: 166px;
+    z-index: 1; /* Set a value appropriate for your layout */
+}
+.fade {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero-text {
+    position: relative;
+    top: -10rem;
+    text-align: center;
+    z-index: 2;
+}
+.hero-text h4 {
+    font-size: 1.4rem;
+    color: var(--a2-colour);
+    letter-spacing: 1.5px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
+}
+
+.hero-text a {
+    font-size: 1rem;
+    color: black;
+    background-color: var(--a1-colour);
+    padding: 10px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.hero-text a:hover {
+    background-color: var(--sec-colour);
+    color: var(--pri-colour);
+    transition: .5s;
+}
+/*-- Location Card --*/
+#location-conatiner {
+    position: relative;
+}
+#location-conatiner h2, #location-conatiner h4 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--pri-colour);
+}
+#location-conatiner h4 {
+    font-size: 1.5rem;
+}
+#location-conatiner a{
+    text-decoration: none;
+    color: black;
+    text-align: right;
+}
+#location-conatiner h5 {
+    font-size: 1.3rem;
+    margin-bottom: -5px;
+    margin-top: -5px;
+    background-color: var(--sec-colour);
+    padding: 10px;
+}
+#location-conatiner p {
+    background-color: var(--sec-colour);
+    padding: 10px;
+}
+
+/*-- Weather Card --*/
+
+#weather-container {
+    background-color: var(--pri-colour);
+    color: var(--a2-colour);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+
+}
+#weather-container img {
+    vertical-align: middle; /* Adjust the value as needed */
+}
+
+.alert {
+    color: #f50707;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#current-weather {
+    margin-top: 20px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+#forecast {
+    margin-top: 20px;
+}
+
+#forecast-details {
+    white-space: pre-line;
+}
+
+/*-- Vehicles CSS --*/
+
+#vehicle-title {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--pri-colour);
+}
+#vehicle-title {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--pri-colour);
+    position: relative;
+}
+
+#vehicle-title::before,
+#vehicle-title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 10%; /* Adjust the width of the lines as needed */
+    height: 3px;
+    background-color: var(--pri-colour);
+}
+
+#vehicle-title::before {
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#vehicle-title::after {
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.vehicles h4 {
+    font-size: 2rem;
+    background-color: var(--sec-colour);
+    color: var(--pri-colour);
+    padding: 20px;
+    margin: 0;
+    border: solid var(--pri-colour) 1px;
+}
+.toggle {
+    cursor: pointer;
+}
+
+.toggle-content, .toggle-image {
+    display: none;
+}
+.hidden {
+    display: block;
+}
+
+/*-- Footer CSS --*/
+footer {
+
+    display: flex;
+    background-color: var(--pri-colour);
+    padding: 5px;
+}
+footer .logo {
+    background-color: var(--pri-colour);
+}
+footer ul {
+    list-style: none;
+}
+footer a{
+    color: var(--a2-colour);
+    text-decoration: none;
+    padding: 4px;
+    font-size: 1.3rem;
+}
+footer a:hover{
+    background-color: var(--sec-colour);
+    color: var(--pri-colour);
+    padding: 10px;
+}

@@ -82,9 +82,12 @@ nav {
 }
 .navigation.show a:hover{
     background-color: var(--sec-colour);
-    color: var(--pri-colour)
+    color: var(--pri-colour);
+    transition: cubic-bezier(1, 0, 0, 1);
 }
-
+.active {
+    border-right: solid var(--sec-colour);
+}
 /*-- Hero CSS --*/
 .hero-box {
     margin: 0;

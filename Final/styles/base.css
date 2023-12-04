@@ -256,8 +256,6 @@ p {
     border: solid var(--pri-colour) 1px;
     font-family: var(--h-font);
 }
-.vehicles p {
-}
 .toggle {
     cursor: pointer;
 }
@@ -296,7 +294,7 @@ footer a:hover{
 }
 
 /*-- Rental CSS --*/
-#rentalTitle {
+#rentalTitle, #tableTitle {
     text-align: center;
     font-family: var(--h-font);
     color: var(--pri-colour);
@@ -335,6 +333,29 @@ tr:first-child{
 tr:nth-child(even) {
     background-color:var(--a1-colour);    
 }
+
+#rentalCards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 350px));
+    grid-gap: 5cap;
+    justify-content: center;
+}
+
+#rentalCards img {
+    width: 350px;
+    height: 240px;
+
+}
+.rentalCard {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    background-color: var(--a2-colour);
+    padding: 5px;
+    transition: 0.5s;
+
+
+}
+
 
 /*-- Reservation CSS --*/
 

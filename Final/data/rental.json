@@ -1,77 +1,100 @@
 {
-    "rental_types": [
-      {
-        "type": "Honda Metro Scooter",
-        "max_persons": 1,
-        "reservation": {
-          "half_day": "$20",
-          "full_day": "$30"
-        },
-        "walk": {
-          "half_day": "$25",
-          "full_day": "$35"
-        }
+  "rental_types": [
+    {
+      "type": "Honda Metro Scooter",
+      "max_persons": 1,
+      "reservation": {
+        "half_day": "$20",
+        "full_day": "$30"
       },
-      {
-        "type": "Honda Dio Scooter",
-        "max_persons": 2,
-        "reservation": {
-          "half_day": "$30",
-          "full_day": "$40"
-        },
-        "walk": {
-          "half_day": "$35",
-          "full_day": "$45"
-        }
+      "walk": {
+        "half_day": "$25",
+        "full_day": "$35"
       },
-      {
-        "type": "Honda PCX150 Scooter",
-        "max_persons": 2,
-        "reservation": {
-          "half_day": "$40",
-          "full_day": "$50"
-        },
-        "walk": {
-          "half_day": "$45",
-          "full_day": "$55"
-        }
-      },
-      {
-        "type": "Honda Pioneer ATV",
-        "max_persons": 4,
-        "reservation": {
-          "half_day": "$50",
-          "full_day": "$70"
-        },
-        "walk": {
-          "half_day": "$60",
-          "full_day": "$80"
-        }
-      },
-      {
-        "type": "Jeep Wrangler - 4 door with a/c",
-        "max_persons": 5,
-        "reservation": {
-          "half_day": "$70",
-          "full_day": "$100"
-        },
-        "walk": {
-          "half_day": "$85",
-          "full_day": "$125"
-        }
-      },
-      {
-        "type": "Jeep Wrangler - 2 door",
-        "max_persons": 4,
-        "reservation": {
-          "half_day": "$60",
-          "full_day": "$85"
-        },
-        "walk": {
-          "half_day": "$70",
-          "full_day": "$90"
-        }
+      "info": {
+        "image":"https://global.honda/content/dam/site/global-jp/news/cq_img/2022/01/2220107-giorno_01.jpg",
+        "description": "Classic scooter styling, epic fuel efficiency and world-famous Honda engineering make the Metropolitan the smartest choice you will make this year."
       }
-    ]
-  }
-  
+    },
+    {
+      "type": "Honda Dio Scooter",
+      "max_persons": 2,
+      "reservation": {
+        "half_day": "$30",
+        "full_day": "$40"
+      },
+      "walk": {
+        "half_day": "$35",
+        "full_day": "$45"
+      },
+      "info": {
+        "image":"https://global.honda/content/site/global-jp/news/pc/2019/2190530-dio110/_jcr_content/par_news-body/newscolumn/par_news-col-1/newsimage.img.jpg/1691239810335.jpg",
+        "description": "The Honda Dio Scooter offers a perfect blend of style and performance. Ideal for two persons, it ensures a smooth and enjoyable ride for your urban adventures."
+      }
+    },
+    {
+      "type": "Honda PCX150 Scooter",
+      "max_persons": 2,
+      "reservation": {
+        "half_day": "$40",
+        "full_day": "$50"
+      },
+      "walk": {
+        "half_day": "$45",
+        "full_day": "$55"
+      },
+      "info": {
+        "image":"https://global.honda/content/site/global-jp/news/pc/2023/2230112-pcx/_jcr_content/par_news-body/newscolumn_1212375658/par_news-col-1/newsimage.img.jpg/1691240345193.jpg",
+        "description": "Experience the thrill of the open road with the Honda PCX150 Scooter. With its sleek design and powerful engine, it's the perfect choice for a stylish and efficient ride."
+      }
+    },
+    {
+      "type": "Honda Pioneer ATV",
+      "max_persons": 4,
+      "reservation": {
+        "half_day": "$50",
+        "full_day": "$70"
+      },
+      "walk": {
+        "half_day": "$60",
+        "full_day": "$80"
+      },
+      "info": {
+        "image":"https://powersports.honda.com/sxs/recutility/-/media/products/family/pioneer-1000/trims/trim-main/pioneer-1000/2024/2024-pioneer-1000-black_forest_green-650x380.png",
+        "description": "Conquer any terrain with the Honda Pioneer ATV. Designed for adventure and reliability, it's the ultimate choice for those who seek excitement off the beaten path."
+      }
+    },
+    {
+      "type": "Jeep Wrangler - 4 door with a/c",
+      "max_persons": 5,
+      "reservation": {
+        "half_day": "$70",
+        "full_day": "$100"
+      },
+      "walk": {
+        "half_day": "$85",
+        "full_day": "$125"
+      },
+      "info": {
+        "image":"https://www.jeep-japan.com/content/dam/cross-regional/apac/jeep/ja_jp/wrangler/overview/sport1.jpg.img.1440.jpg",
+        "description": "Embark on a journey with the Jeep Wrangler - 4 door with a/c. With spacious interiors and advanced features, it's the perfect choice for a comfortable and adventurous ride."
+      }
+    },
+    {
+      "type": "Jeep Wrangler - 2 door",
+      "max_persons": 4,
+      "reservation": {
+        "half_day": "$60",
+        "full_day": "$85"
+      },
+      "walk": {
+        "half_day": "$70",
+        "full_day": "$90"
+      },
+      "info": {
+        "image":"https://65e81151f52e248c552b-fe74cd567ea2f1228f846834bd67571e.ssl.cf1.rackcdn.com/ldm-images/2020-Jeep-Wrangler-Rubicon-Trim.jpeg",
+        "description": "Unleash your sense of adventure with the Jeep Wrangler - 2 door. Its compact design and rugged capabilities make it the ideal choice for those seeking thrills on and off the road."
+      }
+    }
+  ]
+}

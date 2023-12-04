@@ -101,6 +101,10 @@
         margin-left: 10%;
         font-size: 1rem;
     }
+    .rentalCard:hover {
+        padding: 20px;
+        transition: 0.5s;
+    }
     input, select {
         padding: 8px;
     }

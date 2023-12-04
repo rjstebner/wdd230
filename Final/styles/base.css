@@ -400,6 +400,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-family: var(--h-font);
+    width: 95%;
 }
 
 button:hover {

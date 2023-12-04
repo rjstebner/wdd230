@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stebner - WDD 230 - Final Website</title>
+    <link rel="icon" href="...">
+    <meta name="author" content="Randy Stebner">
+    <meta name="description" content="Scoots Rentals Homepage">    
+    <meta property="og:title" content="Scoots">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="...">
+    <meta property="og:url" content="...">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <div class="logo" id="logo-top">
+            <img src="images/Scooter-removebg-preview.webp" alt="logo">
+        </div>
+        <div class="socials" id="soc-top">
+            <a target="_blank" href="contact.html"><img src="images/contact.webp" alt="contact"></a>
+            <a target="_blank" href="https://www.facebook.com/"><img src="images/facebook.webp" alt="facebook"></a>
+            <a target="_blank" href="https://twitter.com/"><img src="images/xitter.webp" alt="twitter"></a>
+        </div>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li>
+                    <a href="index.html" title="Home">Home</a>
+                    <a href="rentals.html" title="Rentals">Rentals</a>
+                    <a href="reservation.html" title="Reservations">Reservations</a>
+                    <a href="contact.html" class="active" title="Contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2 id="reservationTitle">Contact Us</h2>
+            <form>
+                <fieldset class="form-group" id="personalInfo">            
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+  
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="email@email.com">
+                    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]" placeholder="123456789">
+
+                    
+                    <p class="labelP">How Should We Reply:</p>
+                        <input type="radio" name="replyType" id="noReply" value="none">
+                        <label class="radio" for="noReply">No reply needed</label>
+                        
+                        <input type="radio" name="replyType" id="replyPhone" value="phone">
+                        <label class="radio" for="replyPhone">Phone</label>
+                        
+                        <input type="radio" name="replyType" id="replyEmail" value="email">
+                        <label class="radio" for="replyEmail">Email</label>
+                    
+                    
+
+
+                    <label for="comment">Comments or Requests:</label>
+                    <textarea id="comment" name="comment" rows="3" cols="40"></textarea>
+                </fieldset>       
+
+        
+                <button type="submit">Submit Request</button>
+            </form>
+        </div>
+        <div id="mapContainer">
+            <h2 id="mapTitle">Our Locations</h2>
+            <div id="mapGrid">
+                <div id="location01">
+                    <h5>C. 1 Sur 58, Centro</h5>
+                    <p>Cozumel Q.R.</p>
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14947.599828291652!2d-86.9543383!3d20.510327!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cefc84df4b%3A0xa4a71c5399f68bd2!2sBenito%20Juarez%20Park!5e0!3m2!1sen!2sjp!4v1701673728838!5m2!1sen!2sjp" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div id="loaction02">
+                    <h5>Av. Rafeal E. Melgar 1</h5>
+                    <p>Cozumel Q.R.</p>
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8889.845694806465!2d-86.9756211323818!3d20.476703162274575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e574f41567e33%3A0x21086808d9f431d2!2sAv.%20Rafael%20E.%20Melgar%201%2C%2077675%20Cozumel%2C%20Q.R.%2C%20Mexico!5e0!3m2!1sen!2sjp!4v1701673751334!5m2!1sen!2sjp" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="logo" id="logo-bottom">
+            <img src="images/Scooter.webp" alt="logo">
+        </div>
+            <ul>
+                <li>
+                    <a href="rentals.html" title="Rentals">Rentals</a>
+                    <a href="reservation.html" title="Reservations">Reservations</a>
+                    <a href="contact.html" title="Contact">Contact</a>
+                </li>
+
+            </ul>
+    </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/rental-type.js"></script>
+</body>
+</html>

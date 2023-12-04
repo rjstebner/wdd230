@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stebner - WDD 230 - Final Website</title>
+    <link rel="icon" href="...">
+    <meta name="author" content="Randy Stebner">
+    <meta name="description" content="Scoots Rentals Homepage">    
+    <meta property="og:title" content="Scoots">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="...">
+    <meta property="og:url" content="...">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <div class="logo" id="logo-top">
+            <img src="images/Scooter-removebg-preview.webp" alt="logo">
+        </div>
+        <div class="socials" id="soc-top">
+            <a target="_blank" href="contact.html"><img src="images/contact.webp" alt="contact"></a>
+            <a target="_blank" href="https://www.facebook.com/"><img src="images/facebook.webp" alt="facebook"></a>
+            <a target="_blank" href="https://twitter.com/"><img src="images/xitter.webp" alt="twitter"></a>
+        </div>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li>
+                    <a href="index.html" title="Home">Home</a>
+                    <a href="rentals.html" title="Rentals">Rentals</a>
+                    <a href="reservation.html" class="active" title="Reservations">Reservations</a>
+                    <a href="contact.html" title="Contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2 id="reservationTitle">Reservations</h2>
+            <form>
+                <fieldset class="form-group" id="vehicleInfo">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+            
+                        <p class="labelP">Period:</p>
+                            <label class="radio" for="half">Half-Day</label>
+                            <input type="radio" name="period" id="half" value="half">
+                            
+                            <label class="radio" for="full">Full-Day</label>
+                            <input type="radio" name="period" id="full" value="full">
+
+            
+                        <label for="rental-type">Rental Type:</label>
+                        <select id="rental-type" name="rental-type" required>
+                            <option value="" id="none">--Select-- </option>
+                        </select>
+                </fieldset>
+                <fieldset class="form-group" id="personalInfo">            
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required pattern="[0-9]" placeholder="123456789">
+  
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="email@email.com">
+            
+                        <label for="state-country">Home State or Country:</label>
+                        <input type="text" id="state-country" name="state-country" required>
+                </fieldset>       
+                <fieldset class="form-group" id="additionInfo">
+                    <label for="cruise-line">Cruise Line (if applicable):</label>
+                    <input type="text" id="cruise-line" name="cruise-line">
+        
+                    <label for="drop-off">Drop-off Location (if applicable):</label>
+                    <textarea id="drop-off" name="drop-off" rows="5" cols="40"></textarea>
+
+                    <label for="requests">Comments or Requests:</label>
+                    <textarea id="requests" name="requests" rows="3" cols="40"></textarea>
+                </fieldset>
+
+        
+                <button type="submit">Request Reservation</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="logo" id="logo-bottom">
+            <img src="images/Scooter.webp" alt="logo">
+        </div>
+            <ul>
+                <li>
+                    <a href="rentals.html" title="Rentals">Rentals</a>
+                    <a href="reservation.html" title="Reservations">Reservations</a>
+                    <a href="contact.html" title="Contact">Contact</a>
+                </li>
+
+            </ul>
+    </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/rental-type.js"></script>
+</body>
+</html>

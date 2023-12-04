@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat&display=swap');
 :root {
     /*-- Colours --*/
     --pri-colour : #214E78;
     --sec-colour : #F2BB05;
     --a1-colour : #4ecdc4;
     --a2-colour : #f7fff7;
+
+    /*-- Font --*/
+    --h-font : 'Montserrat', sans-serif;
+    --p-font : 'Inter', sans-serif;
+
+}
+body{
+    font-family: var(--p-font);
 }
 
 .logo img {
@@ -25,6 +34,7 @@
 
 header{
     background-color: var(--pri-colour);
+    font-family: var(--h-font);
 }
 #menu {
     text-decoration: none;
@@ -87,6 +97,7 @@ nav {
 }
 .active {
     border-right: solid var(--sec-colour);
+    border-left: solid var(--sec-colour);
 }
 /*-- Hero CSS --*/
 .hero-box {
@@ -109,6 +120,7 @@ nav {
 }
 
 .hero-text {
+    font-family: var(--h-font);
     position: relative;
     top: -10rem;
     text-align: center;
@@ -142,6 +154,7 @@ nav {
 #location-conatiner h2, #location-conatiner h4 {
     text-align: center;
     font-size: 2.5rem;
+    font-family: var(--h-font);
     color: var(--pri-colour);
 }
 #location-conatiner h4 {
@@ -172,6 +185,7 @@ nav {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    font-family: var(--h-font);
     text-align: left;
 
 }
@@ -207,12 +221,9 @@ p {
     text-align: center;
     font-size: 3rem;
     color: var(--pri-colour);
-}
-#vehicle-title {
-    text-align: center;
-    font-size: 3rem;
-    color: var(--pri-colour);
     position: relative;
+    font-family: var(--h-font);
+
 }
 
 #vehicle-title::before,
@@ -243,6 +254,9 @@ p {
     padding: 20px;
     margin: 0;
     border: solid var(--pri-colour) 1px;
+    font-family: var(--h-font);
+}
+.vehicles p {
 }
 .toggle {
     cursor: pointer;
@@ -257,7 +271,7 @@ p {
 
 /*-- Footer CSS --*/
 footer {
-
+    font-family: var(--h-font);
     display: flex;
     background-color: var(--pri-colour);
     padding: 5px;
@@ -278,4 +292,161 @@ footer a:hover{
     background-color: var(--sec-colour);
     color: var(--pri-colour);
     padding: 10px;
+    transition: 0.5s;
+}
+
+/*-- Rental CSS --*/
+#rentalTitle {
+    text-align: center;
+    font-family: var(--h-font);
+    color: var(--pri-colour);
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: .8rem;
+}
+#rentalTable thead {
+    background-color: var(--sec-colour);
+    color: var(--pri-colour);
+    border-bottom: none;
+    border: 1px solid var(--pri-colour);
+    font-family: var(--h-font)
+}
+#rentalTable thead th:nth-child(3), #rentalTable thead th:nth-child(5){
+    padding: 8px;
+    border: 1px solid var(--pri-colour);
+    border-right: none;
+    text-align: center;
+
+
+}
+td {
+    border: 1px solid var(--pri-colour);
+    padding: 8px;
+    text-align: left;
+}
+tr:first-child{
+    background-color: var(--sec-colour);
+    font-family: var(--h-font);
+}
+tr:nth-child(even) {
+    background-color:var(--a1-colour);    
+}
+
+/*-- Reservation CSS --*/
+
+#reservationTitle {
+    font-size: 2rem;
+    margin-left: 15px;
+    font-family: var(--h-font);
+    color: var(--pri-colour);
+}
+.container {
+    width: 100%;
+    max-width: 500px;
+
+}
+
+.form-group {
+    border: none;
+    background-color:var(--a2-colour);
+    font-family: var(--p-font)
+}
+
+label, .labelP {
+    display: block;
+    margin-top: 10px;
+    color: var(--pri-colour);
+}
+.radio{
+    color: rgb(92, 80, 80);
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 20px;
+}
+input#half, input#full {
+    position: relative;
+    top: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 14px;
+    box-sizing: border-box;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:required{
+    border-left: 5px solid red;
+}
+input:required:valid{
+    border-left: 5px solid green;
+}
+
+button {
+    background-color: var(--a1-colour);
+    color: black;
+    padding: 10px 15px;
+    position: relative;
+    left: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--h-font);
+}
+
+button:hover {
+    background-color: var(--sec-colour);
+    color: var(--pri-colour);
+    transition: 0.5s;
+
+}
+/*-- Contact Us --*/
+input#replyPhone, input#noReply, input#replyEmail {
+    position: relative;
+    top: 20px;
+}
+
+#mapTitle {
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--h-font);
+    color: var(--pri-colour);
+}
+#mapTitle::before,
+#mapTitle::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 63%;
+    width: 10%;
+    height: 3px;
+    background-color: var(--pri-colour);
+}
+
+#mapTitle::before {
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#mapTitle::after {
+    right: 0;
+    transform: translateY(-50%);
+}
+
+#mapGrid {
+    text-align: center;
+    font-size: 1.2rem;
+}
+.map {
+    width: 90%;
+    height: 400px;
+    margin: 5%;
 }

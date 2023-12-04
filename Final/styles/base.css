@@ -25,8 +25,8 @@ body{
     position: absolute; top: 0; right: 0;
 }
 .socials img {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     border-radius: 100%;
 }
 
@@ -136,15 +136,16 @@ nav {
 .hero-text a {
     font-size: 1rem;
     color: black;
-    background-color: var(--a1-colour);
+    background-color: var(--sec-colour);
     padding: 10px;
     border-radius: 50px;
     text-decoration: none;
+    color: var(--pri-colour);
 }
 
 .hero-text a:hover {
-    background-color: var(--sec-colour);
-    color: var(--pri-colour);
+    background-color: var(--a2-colour);
+    color: black;
     transition: .5s;
 }
 /*-- Location Card --*/
@@ -391,7 +392,8 @@ label, .labelP {
 }
 input#half, input#full {
     position: relative;
-    top: 20px;
+    bottom: 17px;
+
 }
 
 input, select {
@@ -411,17 +413,18 @@ input:required:valid{
     border-left: 5px solid green;
 }
 
-button {
+form button {
     background-color: var(--a1-colour);
     color: black;
     padding: 10px 15px;
-    position: relative;
-    left: 15px;
+    margin-left: 15px;
+    margin-bottom: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-family: var(--h-font);
     width: 95%;
+
 }
 
 button:hover {
@@ -429,6 +432,17 @@ button:hover {
     color: var(--pri-colour);
     transition: 0.5s;
 
+}
+.agreeText{
+    color: var(--pri-colour);
+    margin-left: 15px;
+}
+#agreeList {
+    color: black;
+    margin-left: 25px;
+}
+.agreeText:last-child(){
+    margin-bottom: 5px;
 }
 /*-- Contact Us --*/
 input#replyPhone, input#noReply, input#replyEmail {

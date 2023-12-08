@@ -393,7 +393,7 @@ label, .labelP {
 }
 input#half, input#full {
     position: relative;
-    bottom: 17px;
+    bottom: 30px;
 
 }
 
@@ -448,7 +448,7 @@ button:hover {
 /*-- Contact Us --*/
 input#replyPhone, input#noReply, input#replyEmail {
     position: relative;
-    top: 20px;
+    top: 32px;
 }
 
 #mapTitle {
@@ -462,7 +462,7 @@ input#replyPhone, input#noReply, input#replyEmail {
     content: "";
     display: block;
     position: absolute;
-    top: 63%;
+    top: 76.6%;
     width: 10%;
     height: 3px;
     background-color: var(--pri-colour);
